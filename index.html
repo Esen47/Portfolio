@@ -2,11 +2,352 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="main-header">
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-nav navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <!-- LOGO END -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVIGATION END -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- INTRO SECTION -->
+    <section class="intro-section">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste beatae commodi perspiciatis, sed sint.</h1>
+        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, error.</h2>
+        <a href="#">Get to know me <span><img src="img/forward.png" alt="forward arrow"></span></a>
+    </section>
+    <!-- INTRO SECTION END -->
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section">
+        <h3>Skills</h3>
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h4>HTML</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/html.png" class="img-fluid" alt="Html icon">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/jsx.png" class="img-fluid" alt="Jsx icon">
+                            <span>JSX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h4>CSS</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/css.png" clas="img-fluid" alt="Css icon">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/bootstrap.png" class="img-fluid" alt="Bootstrap icon">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/sass.png" class="img-fluid" alt="Sass icon">
+                            <span>SASS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h4>Javascript</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/js.png" class="img-fluid" alt="Js icon">
+                            <span>Javascript ES6</span>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/react.png" class="img-fluid" alt="React icon">
+                            <span>React</span>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/jquery.png" class="img-fluid" alt="Jquery icon">
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h4>Build tools and Other</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/webpack.png" class="img-fluid" alt="Webpack icon">
+                            <span>Webpack</span>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <img src="img/git.png" class="img-fluid" alt="Github icon">
+                            <span>Github</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLS SECTION END -->
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects">
+        <div class="container">
+            <!-- MODALS -->
+            <div class="modal fade" tabindex="-1" id="modal1">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title 1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade" tabindex="-1" id="modal2">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title 2</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade" tabindex="-1" id="modal3">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title 3</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade" tabindex="-1" id="modal4">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title 4</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade" tabindex="-1" id="modal5">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title 5</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade" tabindex="-1" id="modal6">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title 6</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+              <!-- MODALS END -->
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" data-toggle="modal" data-target="#modal2" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" data-toggle="modal" data-target="#modal3" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" data-toggle="modal" data-target="#modal4" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" data-toggle="modal" data-target="#modal5" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" data-toggle="modal" data-target="#modal6" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECTS SECTION END -->
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h3>CONTACT</h3>
+        <p>If you have any further questions or would like to get in touch with me, please send me your message below</p>
+        <form class="contact-form">
+            <input type="text">
+            <label for="name" id="name" placeholder="name" required></label>
+            <input type="email">
+            <label for="email" id="email" placeholder="Email address" required></label>
+            <textarea name="" id="textarea" placeholder="Your message" required></textarea>
+            <input type="submit" class="button" id="submit" value="SUBMIT">
+        </form>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+    <div class="footer">
+        <span><img src="img/back-to-top.png" alt="back to top button"></span>
+        <ul class="links">
+            <li><a href="#"><img src="img/gmail.png" alt="gmail contact"></a></li>
+            <li><a href="#"><img src="img/github.png" alt="github contact"></a></li>
+            <span>Sasa Nikolic&copy;2020</span>
+        </ul>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
