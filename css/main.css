@@ -1,3 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+  box-sizing: border-box; }
 
+body {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 16px;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
+a {
+  color: #636363; }
+  a:hover {
+    color: #fff; }
+
+.main-header .navbar {
+  background-color: #ecb0ff; }
+  .main-header .navbar #logo {
+    background-image: url(../img/logo.svg);
+    display: block;
+    text-indent: -9999px;
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    transition: all .4s; }
+    .main-header .navbar #logo:hover {
+      -webkit-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+      opacity: 0.5; }
+  .main-header .navbar .navbar-toggler {
+    color: #6c6c6c;
+    border: 0;
+    outline: none; }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.nav-link:focus, .nav-link:hover, .nav-link:visited {
+  outline: none;
+  text-decoration: none; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #636363; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff; }
+
+.intro-content {
+  text-align: center;
+  background-color: #fff;
+  background-image: url(../img/intro-bkg.jpg);
+  background-size: cover;
+  color: #fff; }
+  .intro-content h1 {
+    font-size: 50px; }
+  .intro-content h2 {
+    font-size: 30px; }
+  .intro-content a {
+    color: #636363;
+    border: 3px solid #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 20px 0 40px 0; }
+    .intro-content a span img {
+      opacity: 0.6;
+      transition: all .6s; }
+      .intro-content a span img:hover {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0.4; }
+
+.skills-section {
+  color: #636363;
+  background-image: url(../img/skills-bkg.jpg);
+  background-size: cover;
+  padding-bottom: 23px; }
+  .skills-section h3 {
+    padding: 15px 0;
+    text-align: center;
+    margin: 0; }
+  .skills-section h4 {
+    text-align: center;
+    margin: 5px 0 0 0;
+    font-style: italic; }
+  .skills-section .skills-display {
+    background-color: #e2e2e2;
+    margin-bottom: 30px; }
+    .skills-section .skills-display span {
+      display: block;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,39 @@
+.main-header .navbar {
+    background-color: $purple;
+    #logo {
+        background-image: url(../img/logo.svg);
+        display: block;
+        text-indent: -9999px;
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        transition: all .4s;
+        &:hover {
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+            opacity: 0.5;
+        }
+    }
+    .navbar-toggler {
+        color: #6c6c6c;
+        border: 0;
+        outline: none;
+    }
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");        
+}
+.nav-link:focus, .nav-link:hover, .nav-link:visited {
+    outline: none;
+    text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $link-color;
+    &:hover{
+        color: $white;
+    }
+}

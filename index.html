@@ -13,18 +13,18 @@
     <!-- HEADER -->
     <header class="main-header">
         <!-- NAVIGATION -->
-        <nav class="navbar navbar-nav navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-nav navbar-expand-lg">
             <div class="container">
                 <!-- LOGO -->
-                <a class="navbar-brand" href="#">Portfolio</a>
+                <a href="#" id="logo">Logo<img src="img/logo.svg" alt="logo"></a>
                 <!-- LOGO END -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                 aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -49,9 +49,11 @@
 
     <!-- INTRO SECTION -->
     <section class="intro-section">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste beatae commodi perspiciatis, sed sint.</h1>
-        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, error.</h2>
-        <a href="#">Get to know me <span><img src="img/forward.png" alt="forward arrow"></span></a>
+        <div class="intro-content">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste beatae commodi perspiciatis, sed sint.</h1>
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, error.</h2>
+            <a href="#">Get to know me <span><img src="img/forward.png" alt="forward arrow"></span></a>
+        </div>
     </section>
     <!-- INTRO SECTION END -->
 
@@ -59,7 +61,7 @@
     <section class="skills-section">
         <h3>Skills</h3>
         <div class="container">
-            <div class="card">
+            <div class="card skills-display">
                 <div class="card-content">
                     <h4>HTML</h4>
                     <div class="row text-center">
@@ -74,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card skills-display">
                 <div class="card-content">
                     <h4>CSS</h4>
                     <div class="row text-center">
@@ -93,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card skills-display">
                 <div class="card-content">
                     <h4>Javascript</h4>
                     <div class="row text-center">
@@ -112,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card skills-display" id="abc">
                 <div class="card-content">
                     <h4>Build tools and Other</h4>
                     <div class="row text-center">

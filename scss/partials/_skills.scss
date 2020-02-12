@@ -1,0 +1,24 @@
+.skills-section {
+    color: $link-color;
+    background-image: url(../img/skills-bkg.jpg);
+    background-size: cover;
+    padding-bottom: 23px;
+    h3 {
+        padding: 15px 0;
+        text-align: center;
+        margin: 0;
+    }
+    h4 {
+        text-align: center;
+        margin: 5px 0 0 0;
+        font-style: italic;
+    }
+    .skills-display {
+        background-color:#e2e2e2;
+        margin-bottom: 30px;
+        span {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+}
