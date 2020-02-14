@@ -29,10 +29,10 @@ a {
     background-repeat: no-repeat;
     transition: all .4s; }
     .main-header .navbar #logo:hover {
-      -webkit-transform: rotate(-20deg);
-      -moz-transform: rotate(-20deg);
-      transform: rotate(-20deg);
-      opacity: 0.5; }
+      opacity: 0.5;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      transform: scale(1.1); }
   .main-header .navbar .navbar-toggler {
     color: #6c6c6c;
     border: 0;
@@ -50,6 +50,16 @@ a {
   .navbar-light .navbar-nav .nav-link:hover {
     color: #fff; }
 
+/* .navbar-nav {
+    li {
+        text-align: center;
+        a {
+        border-bottom: 2px solid $white;
+        display: inline-block;
+        text-transform: uppercase;
+       }
+    }
+} */
 .intro-content {
   text-align: center;
   background-color: #fff;
@@ -97,5 +107,36 @@ a {
     .skills-section .skills-display span {
       display: block;
       margin-bottom: 5px; }
+
+.projects {
+  padding: 40px 0 20px 0;
+  background-image: url(../img/boxes.jpg);
+  background-size: cover; }
+  .projects .card {
+    border: 3px solid #acacff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+    .projects .card .card-img-top {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover; }
+    .projects .card .card-body {
+      text-align: center; }
+    .projects .card a {
+      color: #636363;
+      border: 2px solid #acacff;
+      background-color: #fff;
+      transition: all .5s ease-in-out; }
+      .projects .card a:hover {
+        color: #fff;
+        background-color: #acacff; }
+      .projects .card a:focus {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+  .projects hr {
+    display: block;
+    margin: 30px 0 30px 0; }
 
 /*# sourceMappingURL=main.css.map */
