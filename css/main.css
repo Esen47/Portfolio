@@ -110,8 +110,38 @@ a {
 
 .projects {
   padding: 40px 0 20px 0;
-  background-image: url(../img/boxes.jpg);
+  background-image: url(../img/boxes-min.jpg);
   background-size: cover; }
+  .projects .modal .modal-header {
+    text-align: center;
+    border-bottom: 0; }
+    .projects .modal .modal-header h5 {
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .projects .modal .modal-header button:focus {
+      outline: none; }
+    .projects .modal .modal-header span {
+      color: red; }
+  .projects .modal .modal-details {
+    text-align: center; }
+    .projects .modal .modal-details .img-holder {
+      overflow: hidden; }
+      .projects .modal .modal-details .img-holder img {
+        transition: all 1s ease; }
+        .projects .modal .modal-details .img-holder img:hover {
+          transform: scale(1.2); }
+    .projects .modal .modal-details p {
+      display: inline-block;
+      padding: 10px 0 0 10px;
+      font-style: italic; }
+    .projects .modal .modal-details hr {
+      margin: 0 30px; }
+  .projects .modal .modal-footer {
+    justify-content: center;
+    border: 0; }
+    .projects .modal .modal-footer .btn {
+      border-radius: 5px; }
   .projects .card {
     border: 3px solid #acacff;
     -webkit-border-radius: 0;
@@ -123,20 +153,69 @@ a {
       object-fit: cover; }
     .projects .card .card-body {
       text-align: center; }
-    .projects .card a {
-      color: #636363;
-      border: 2px solid #acacff;
-      background-color: #fff;
-      transition: all .5s ease-in-out; }
-      .projects .card a:hover {
-        color: #fff;
-        background-color: #acacff; }
-      .projects .card a:focus {
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none; }
+    .projects .card h5 {
+      font-weight: bold; }
+    .projects .card p {
+      font-size: 14px;
+      text-align: center; }
+  .projects a, .projects .btn {
+    color: #acacff;
+    border: 2px solid #acacff;
+    background-color: #fff;
+    transition: all .5s ease-in-out; }
+    .projects a:hover, .projects .btn:hover {
+      color: #fff;
+      background-color: #acacff; }
+    .projects a:focus, .projects .btn:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
   .projects hr {
     display: block;
-    margin: 30px 0 30px 0; }
+    margin: 10px 0 10px 0; }
+
+.contact {
+  color: #fff;
+  background-color: #2f2f2f; }
+  .contact .contact-intro {
+    text-align: center;
+    color: #fff; }
+    .contact .contact-intro h6 {
+      padding: 20px 0 0 10px;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .contact .contact-intro p {
+      font-size: 16px;
+      margin-bottom: 10px; }
+  .contact .form-wrapper {
+    text-align: center; }
+    .contact .form-wrapper .contact-form {
+      width: 50%;
+      display: inline-block; }
+      .contact .form-wrapper .contact-form .form-group label {
+        padding: 10px 0; }
+      .contact .form-wrapper .contact-form .form-group textarea {
+        overflow: hidden;
+        resize: none;
+        margin-bottom: 0; }
+      .contact .form-wrapper .contact-form .form-group input, .contact .form-wrapper .contact-form .form-group textarea {
+        border: 0;
+        border-radius: 0; }
+        .contact .form-wrapper .contact-form .form-group input:focus, .contact .form-wrapper .contact-form .form-group textarea:focus {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          outline: 3px solid #ecb0ff; }
+      .contact .form-wrapper .contact-form .form-submit {
+        border: 2px solid #fff;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 0 15px 0; }
+        .contact .form-wrapper .contact-form .form-submit:hover {
+          background-color: #ecb0ff;
+          border-color: #ecb0ff; }
 
 /*# sourceMappingURL=main.css.map */
