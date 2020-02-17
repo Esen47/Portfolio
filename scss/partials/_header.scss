@@ -1,49 +1,59 @@
-.main-header .navbar {
-    background-color: $purple;
+.main-header .navigation {
+    @include background-gradient;
+    font-size: 12px;
     #logo {
         background-image: url(../img/logo.svg);
-        display: block;
+        display: inline-block;
         text-indent: -9999px;
-        width: 60px;
-        height: 60px;
-        background-size: 60px 60px;
+        width: 45px;
+        height: 45px;
+        background-size: 45px 45px;
         background-repeat: no-repeat;
         transition: all .4s;
+        opacity: 0.6;
+        margin-left: 50px;
         &:hover {
-            opacity: 0.5;
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            transform: scale(1.1) ;
+            opacity: 1;
+            @include scale(1.2);
         }
+    }
+    .navigation-list {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
     }
     .navbar-toggler {
         color: #6c6c6c;
         border: 0;
         outline: none;
     }
-}
-
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");        
-}
-.nav-link:focus, .nav-link:hover, .nav-link:visited {
-    outline: none;
-    text-decoration: none;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: $link-color;
-    &:hover{
-        color: $white;
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");        
     }
-}
-/* .navbar-nav {
-    li {
-        text-align: center;
-        a {
-        border-bottom: 2px solid $white;
+    .nav-link {
         display: inline-block;
-        text-transform: uppercase;
-       }
+        color: $light-black;
+        border-bottom: 2px solid transparent;
     }
-} */
+    .nav-link:focus, .nav-link:hover, .nav-link:visited {
+        outline: none;
+        text-decoration: none;
+        border-color: $light-black;
+    }
+}
+@media (min-width: 768px) {
+    .main-header .navigation {
+        font-size: 14px;
+        #logo {
+            width: 60px;
+            height: 60px;
+            background-size: 60px 60px;
+            margin-left: 0;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .main-header .navigation {
+        font-size: 16px;
+    }
+}

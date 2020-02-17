@@ -10,15 +10,15 @@ body {
     font-size: 16px;
     background-color: $white;
     font-family: $montserrat;
-    background-color: $background-color;
+    background-color: $light-black;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
-a {
+/*a {
     color: $link-color;
     &:hover {
         color: $white;
     }
-}
+}*/
 

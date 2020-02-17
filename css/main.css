@@ -16,84 +16,136 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
 
-a {
-  color: #636363; }
-  a:hover {
-    color: #fff; }
-
-.main-header .navbar {
-  background-color: #ecb0ff; }
-  .main-header .navbar #logo {
+/*a {
+    color: $link-color;
+    &:hover {
+        color: $white;
+    }
+}*/
+.main-header .navigation {
+  background: #654ea3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #eaafc8, #654ea3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #eaafc8, #654ea3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 12px; }
+  .main-header .navigation #logo {
     background-image: url(../img/logo.svg);
-    display: block;
+    display: inline-block;
     text-indent: -9999px;
-    width: 60px;
-    height: 60px;
-    background-size: 60px 60px;
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
     background-repeat: no-repeat;
-    transition: all .4s; }
-    .main-header .navbar #logo:hover {
-      opacity: 0.5;
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      transform: scale(1.1); }
-  .main-header .navbar .navbar-toggler {
+    transition: all .4s;
+    opacity: 0.6;
+    margin-left: 50px; }
+    .main-header .navigation #logo:hover {
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2); }
+  .main-header .navigation .navigation-list {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center; }
+  .main-header .navigation .navbar-toggler {
     color: #6c6c6c;
     border: 0;
     outline: none; }
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-.nav-link:focus, .nav-link:hover, .nav-link:visited {
-  outline: none;
-  text-decoration: none; }
-
-.navbar-light .navbar-nav .nav-link {
-  color: #636363; }
-  .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff; }
-
-/* .navbar-nav {
-    li {
-        text-align: center;
-        a {
-        border-bottom: 2px solid $white;
-        display: inline-block;
-        text-transform: uppercase;
-       }
-    }
-} */
-.intro-content {
-  text-align: center;
-  background-color: #fff;
-  background-image: url(../img/intro-bkg.jpg);
-  background-size: cover;
-  color: #fff; }
-  .intro-content h1 {
-    font-size: 50px; }
-  .intro-content h2 {
-    font-size: 30px; }
-  .intro-content a {
-    color: #636363;
-    border: 3px solid #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-size: 18px;
+  .main-header .navigation .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  .main-header .navigation .nav-link {
     display: inline-block;
-    margin: 20px 0 40px 0; }
-    .intro-content a span img {
-      opacity: 0.6;
-      transition: all .6s; }
-      .intro-content a span img:hover {
+    color: #2f2f2f;
+    border-bottom: 2px solid transparent; }
+  .main-header .navigation .nav-link:focus, .main-header .navigation .nav-link:hover, .main-header .navigation .nav-link:visited {
+    outline: none;
+    text-decoration: none;
+    border-color: #2f2f2f; }
+
+@media (min-width: 768px) {
+  .main-header .navigation {
+    font-size: 14px; }
+    .main-header .navigation #logo {
+      width: 60px;
+      height: 60px;
+      background-size: 60px 60px;
+      margin-left: 0; } }
+@media (min-width: 1200px) {
+  .main-header .navigation {
+    font-size: 16px; } }
+.intro-content {
+  background: #654ea3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #eaafc8, #654ea3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #eaafc8, #654ea3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  color: #2f2f2f; }
+  .intro-content h1 {
+    padding: 5px 0;
+    font-size: 0.875rem; }
+    .intro-content h1 span {
+      display: inline-block;
+      background-color: rgba(236, 176, 255, 0.2);
+      padding: 0 4px;
+      -webkit-box-shadow: 0.5px 1px 1px 1px #2f2f2f;
+      -moz-box-shadow: 0.5px 1px 1px 1px #2f2f2f;
+      box-shadow: 0.5px 1px 1px 1px #2f2f2f; }
+  .intro-content h2 {
+    font-size: 0.75rem; }
+  .intro-content #intro-btn {
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    font-weight: bold;
+    color: #2f2f2f;
+    border: 2px solid #ecb0ff;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 6px;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    transition: all .7s; }
+    .intro-content #intro-btn:hover {
+      background-color: #ecb0ff; }
+      .intro-content #intro-btn:hover > span {
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
-        transform: rotate(90deg);
-        opacity: 0.4; }
+        transform: rotate(90deg); }
+    .intro-content #intro-btn span {
+      display: inline-block;
+      margin-left: 3px;
+      background-image: url("../img/forward.png");
+      text-indent: -9999px;
+      width: 12px;
+      height: 12px;
+      background-size: 12px 12px;
+      transition: all .7s; }
 
+@media (min-width: 576px) {
+  .intro-content h1 {
+    font-size: 0.875rem; }
+  .intro-content h2 {
+    font-size: 0.75rem; } }
+@media (min-width: 768px) {
+  .intro-content h1 {
+    font-size: 1rem; }
+  .intro-content h2 {
+    font-size: 0.875rem; }
+  .intro-content #intro-btn {
+    padding: 8px; } }
+@media (min-width: 992px) {
+  .intro-content h1 {
+    font-size: 1.25rem; }
+  .intro-content h2 {
+    font-size: 1.125rem; }
+  .intro-content #intro-btn {
+    padding: 10px; } }
 .skills-section {
-  color: #636363;
+  color: #2f2f2f;
   background-image: url(../img/skills-bkg.jpg);
   background-size: cover;
   padding-bottom: 23px; }
@@ -270,6 +322,8 @@ a {
         .footer .contact-links li a:hover {
           background-color: #fff; }
     .footer .contact-links p {
+      font-style: italic;
+      font-size: 12px;
       margin-top: 15px; }
       .footer .contact-links p span {
         display: inline-block;
