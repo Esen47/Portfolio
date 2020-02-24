@@ -4,13 +4,13 @@
         text-align: center;
         color: $white;
         h6 {
-            padding: 20px 0 0 10px;
-            font-size: 24px;
+            padding: 20px 0 10px 0;
+            font-size: 1em;
             text-transform: uppercase;
             font-weight: bold;
         }
         p {
-            font-size: 16px;
+            font-size: 0.875em;
             margin-bottom: 10px;
         }
     }
@@ -22,7 +22,8 @@
             display: inline-block;
             .form-group {
                 label {
-                    padding: 10px 0;
+                    font-size: 0.875em;
+                    padding: 7px 0 3px 0;
                 }
                 textarea {
                     overflow: hidden;
@@ -45,7 +46,7 @@
                 color: $white;
                 text-transform: uppercase;
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 0.750em;
                 margin: 0 0 60px 0;
                 &:hover {
                     background-color: $purple;
@@ -54,4 +55,38 @@
             }
         }     
     }   
+}
+@media (min-width: 768px) {
+    .contact {
+        .contact-intro {
+            h6 {
+                font-size: 1.250em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+        .form-wrapper {
+            .contact-form {
+                .form-group {
+                    label {
+                        font-size: 1em;
+                    }
+                }
+                .form-submit {
+                    font-size: 0.875em;
+                }
+            }
+        }
+        
+    }
+}
+@media (min-width: 1200px) {
+    .contact {
+        .contact-intro {
+            h6 {
+                font-size: 1.375em;
+            }
+        }
+    }
 }

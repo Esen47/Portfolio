@@ -1,12 +1,19 @@
 .projects {
-    padding: 40px 0 20px 0;
-    background-image: url(../img/boxes-min.jpg);
-    background-size: cover;
+    padding: 20px 0;
+    background-image: url(../img/projects-bkg.jpg);
+    h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1em;
+        color: $light-black;
+    }
     .modal {
         .modal-header {
             text-align: center;
             border-bottom: 0;
             h5 {
+                font-size: 1em;
                 width: 100%;
                 font-weight: bold;
                 text-transform: uppercase;
@@ -30,6 +37,7 @@
                 }
             }
             p {
+                font-size: 0.875em;
                 display: inline-block;
                 padding: 10px 0 0 10px;
                 font-style: italic;
@@ -42,6 +50,7 @@
             justify-content: center; 
             border: 0;
             .btn {
+                font-size: 0.750em;
                 border-radius: 5px;
             }
         }
@@ -51,9 +60,10 @@
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-radius: 0;
+        margin-bottom: 7px;
         .card-img-top {
             width: 100%;
-            height: 15vw;
+            height: 30vh;
             object-fit: cover;
         }
         .card-body {
@@ -61,6 +71,7 @@
         }
         h5 {
             font-weight: bold;
+            font-size: 0.875em;
         }
         p {
             font-size: 14px;
@@ -68,6 +79,7 @@
         }
     }
     a, .btn {
+        font-size: 0.750em;
         color: $blue;
         border: 2px solid $blue;
         background-color: $white;
@@ -82,9 +94,68 @@
             box-shadow: none;
         }
     } 
-    hr {
-        display: block;
-        margin: 10px 0 10px 0;
+}
+@media (min-width: 576px) {
+    .projects {
+        h3 {
+            padding: 10px 0;
+        }
+        .card {
+            margin-bottom: 10px; 
+        }
     }
-} 
+}
+@media (min-width: 768px) {
+    .projects {
+        .modal {
+            .modal-header {
+                h5 {
+                    font-size: 1.125em;      
+                }
+            }
+        }
+        h3 {
+            font-size: 1.25em;
+        }
+        .card {
+            h5 {
+                font-size: 1.125em;
+            }
+        }
+        a, .btn {
+            font-size: 0.875em;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .projects {
+        .modal {
+            .modal-header {
+                h5 {
+                    font-size: 1.250em;      
+                }
+            }
+            .modal-details {
+                p {
+                    font-size: 1em;
+                }
+            }
+            .modal-footer {
+                .btn {
+                    font-size: 0.938em;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .projects {
+        h3 {
+            font-size: 1.375em;
+        }
+        a, .btn {
+            font-size: 0.938em;
+        }
+    }
+}
 
