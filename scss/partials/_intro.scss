@@ -1,83 +1,113 @@
-.intro-content {
+.intro-section {
     @include background-gradient;
-    text-align: center;
-    color: $light-black;
-    h1 {
-        padding: 5px 0;
-        font-size: 0.875rem;
-        span {
-            display: inline-block;
-            background-color: transparentize($purple, 0.8);
-            padding: 0 4px;
-            @include box-shadow(0.5px, 1px, 1px, 1px, $light-black);
-        }
-    }
-    h2 {
-        font-size: 0.75rem;
-    }
-    #intro-btn {
-        text-transform: uppercase;
-        font-size: 0.625rem;
-        font-weight: bold;
+        text-align: center;
         color: $light-black;
-        border: 2px solid $purple;
-        border-radius: 2px;
-        text-decoration: none;
-        padding: 6px;
-        display: inline-block;
-        margin: 10px 0 20px 0;
-        transition: all .7s;
-        &:hover {
-            background-color: $purple;
-            >span {
-                @include rotate(90deg);
-            }
-        }
-        span {
-            display: inline-block;
-            margin-left: 3px;
-            background-image: url("../img/forward.png");
-            text-indent: -9999px;
-            width: 12px;
-            height: 12px;
-            background-size: 12px 12px;
-            transition: all .7s;
-        }
-    }
-}
-@media (min-width: 576px) {
+        padding-top: 120px;
     .intro-content {
+        display: none;
         h1 {
+            padding: 10px 0 35px 0;
             font-size: 0.875rem;
+            span {
+                display: inline-block;
+                background-color: transparentize($link-color, 0.8);
+                padding: 0 4px;
+                @include box-shadow(0.5px, 1px, 1px, 1px, $light-black);
+            }
         }
         h2 {
             font-size: 0.75rem;
         }
+        #intro-btn {
+            text-transform: uppercase;
+            font-size: 0.625rem;
+            font-weight: bold;
+            color: $light-black;
+            border: 2px solid $purple;
+            border-radius: 3px;
+            text-decoration: none;
+            padding: 6px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all .5s;
+            &:hover {
+                background-color: $purple;
+                color: $white;
+                >span {
+                    @include rotate(90deg);
+                }
+            }
+            span {
+                display: inline-block;
+                margin-left: 3px;
+                background-image: url("../img/forward.png");
+                text-indent: -9999px;
+                width: 12px;
+                height: 12px;
+                background-size: 12px 12px;
+                transition: all .7s;
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .intro-section {
+        .intro-content {
+            padding-top: 50px;
+            h1 {
+                font-size: 1.250rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
     }
 }
 @media (min-width: 768px) {
-    .intro-content {
-        h1 {
-            font-size: 1rem;
-        }
-        h2 {
-            font-size: 0.875rem;
-        }
-        #intro-btn {
-            padding: 8px;
+    .intro-section {
+        .intro-content {
+            h1 {
+                font-size: 1.500rem;
+                margin-bottom: 40px;
+            }
+            h2 {
+                font-size: 1.250rem;
+                margin-bottom: 80px;
+            }
+            #intro-btn {
+                border-radius: 5px;
+                padding: 8px;
+            }
         }
     }
 }
 @media (min-width: 992px) {
-    .intro-content {
-        h1 {
-            font-size: 1.25rem;
+    .intro-section {
+        .intro-content {
+            h1 {
+                font-size: 1.750rem; 
+            }
+            h2 {
+                font-size: 1.500rem;
+            }
+            #intro-btn {
+                padding: 10px;
+            }
         }
-        h2 {
-            font-size: 1.125rem;
-        }
-        #intro-btn {
-            padding: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .intro-section {
+        .intro-content {
+            h1 {
+                font-size: 2.000rem;
+            }
+            h2 {
+                font-size: 1.750rem;  
+            }
+            #intro-btn {
+                padding: 12px;
+            }
         }
     }
 }

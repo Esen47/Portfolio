@@ -21,12 +21,12 @@
         text-indent: -9999px;
         &:hover {
             border-color: $white;
-            transform: scale(1.1);
+            @include scale(1.1);
         }
     }
     .contact-links {
         text-align: center;
-        margin: 40px 0;
+        margin: 40px 0 20px 0;
         padding-left: 10px;
         li {
             display: inline-block;
@@ -42,8 +42,8 @@
                 background-size: cover;
                 border-radius: 10px;
                 transition: all .5s;
-                &.gm {
-                    background-image: url("../img/gmail.png");
+                &.fb {
+                    background-image: url("../img/facebook.png");
                 }
                 &.gh {
                     background-image: url("../img/github.png");
@@ -53,23 +53,23 @@
                 }
             }
         }
-        p {
-            font-style: italic;
-            font-size: 12px;
-            margin-top: 15px;
-            span {
-                display: inline-block;
-                padding-left: 5px;
-            }
+    }
+    p {
+        text-align: center;
+        font-style: italic;
+        font-size: 12px;
+        span {
+            display: inline-block;
+            padding-left: 5px;
         }
     }
 }
 @media (min-width: 768px) {
     .footer {
         .icon-holder {
-            width: 30px;
-            height: 30px;
-            top: -15px;
+            width: 32px;
+            height: 32px;
+            top: -16px;
         }
         .contact-links {
             li {
@@ -91,16 +91,16 @@
             border-width: 4px;
         }
         .contact-links {
-            margin: 60px 0;
             li {
                 a {
                     width: 30px;
                     height: 30px;
                 }
             }
-            p {
-                font-size: 0.875em;
-            }
+        }
+        p {
+            font-size: 0.875em;
+            padding-bottom: 10px;
         }
     }
 }

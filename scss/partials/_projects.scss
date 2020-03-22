@@ -1,22 +1,26 @@
 .projects {
-    padding: 20px 0;
+    padding: 4px 0;
     background-image: url(../img/projects-bkg.jpg);
+    background-size: contain;
     h3 {
         text-transform: uppercase;
         font-weight: bold;
         text-align: center;
-        font-size: 1em;
+        font-size: 1rem;
         color: $light-black;
+        margin: 0;
+        padding-bottom: 2px;
     }
     .modal {
         .modal-header {
             text-align: center;
             border-bottom: 0;
             h5 {
-                font-size: 1em;
+                font-size: 1rem;
                 width: 100%;
-                font-weight: bold;
+                font-weight: 300;
                 text-transform: uppercase;
+                color: $blue;
             }
             button:focus {
                 outline: none;
@@ -32,7 +36,7 @@
                 img {
                     transition: all 1s ease;
                     &:hover {
-                        transform: scale(1.2);
+                        @include scale(1.2);
                     }
                 }
             }
@@ -41,6 +45,7 @@
                 display: inline-block;
                 padding: 10px 0 0 10px;
                 font-style: italic;
+                text-transform: uppercase;
             }
             hr {
                 margin:  0 30px;
@@ -71,11 +76,8 @@
         }
         h5 {
             font-weight: bold;
-            font-size: 0.875em;
-        }
-        p {
-            font-size: 14px;
-            text-align: center;
+            font-size: 0.875rem;
+            margin-bottom: 7px;
         }
     }
     a, .btn {
@@ -98,10 +100,10 @@
 @media (min-width: 576px) {
     .projects {
         h3 {
-            padding: 10px 0;
+            padding: 2px 0;
         }
         .card {
-            margin-bottom: 10px; 
+            margin-bottom: 7px; 
         }
     }
 }
@@ -123,7 +125,7 @@
             }
         }
         a, .btn {
-            font-size: 0.875em;
+            font-size: 0.750em;
         }
     }
 }
@@ -150,11 +152,9 @@
 }
 @media (min-width: 1200px) {
     .projects {
+        padding-top: 10px;
         h3 {
             font-size: 1.375em;
-        }
-        a, .btn {
-            font-size: 0.938em;
         }
     }
 }
