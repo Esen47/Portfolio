@@ -13,7 +13,7 @@
         cursor: pointer;
         width: 25px;
         height: 25px;
-        transition: all .2s ease-in-out;
+        transition: all .4s ease-in-out;
         background-image: url("../img/back-to-top.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -21,7 +21,6 @@
         text-indent: -9999px;
         &:hover {
             border-color: $white;
-            @include scale(1.1);
         }
     }
     .contact-links {

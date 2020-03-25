@@ -18,7 +18,6 @@ $(document).ready(() => {
 
 $(window).on('scroll', function() {
     fromTop = $(window).scrollTop();
-    console.log(fromTop);
     if(fromTop > 100) {
         navigation.addClass('resize-navigation');
     } else {
@@ -28,10 +27,8 @@ $(window).on('scroll', function() {
 
 function sectionHeight() {
     winHeight = $(window).height();
-    console.log(winHeight);
     $('.intro-section, .skills-section, .projects').css('min-height', winHeight);
     footerHeight = $('.footer').outerHeight();
-    console.log(footerHeight);
     $('.contact').css('min-height', winHeight - footerHeight - navHeight);
 }
 
@@ -47,9 +44,7 @@ $('.nav-link').on('click',function() {
 $('nav a').on('click', function(e) {
     e.preventDefault();
     sectionClass = $(this).attr('href');
-    console.log(sectionClass);
     sectionPosition = $(sectionClass).offset().top;
-    console.log(sectionPosition); 
 
     $('html, body').animate({
         scrollTop: sectionPosition - navHeight

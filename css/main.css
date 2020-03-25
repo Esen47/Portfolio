@@ -389,17 +389,14 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     width: 25px;
     height: 25px;
-    transition: all .2s ease-in-out;
+    transition: all .4s ease-in-out;
     background-image: url("../img/back-to-top.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-indent: -9999px; }
     .footer .icon-holder:hover {
-      border-color: #fff;
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      transform: scale(1.1); }
+      border-color: #fff; }
   .footer .contact-links {
     text-align: center;
     margin: 40px 0 20px 0;
