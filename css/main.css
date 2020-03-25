@@ -252,7 +252,8 @@ h1, h2, h3, h4, h5, h6 {
       display: inline-block;
       padding: 10px 0 0 10px;
       font-style: italic;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 600; }
     .projects .modal .modal-details hr {
       margin: 0 30px; }
   .projects .modal .modal-footer {
