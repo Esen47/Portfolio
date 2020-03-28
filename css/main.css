@@ -98,11 +98,11 @@ h1, h2, h3, h4, h5, h6 {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   color: #2f2f2f;
-  padding-top: 120px; }
+  padding-top: 200px; }
   .intro-section .intro-content {
     display: none; }
     .intro-section .intro-content h1 {
-      padding: 10px 0 35px 0;
+      padding: 30px 0 60px 0;
       font-size: 0.875rem; }
       .intro-section .intro-content h1 span {
         display: inline-block;
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       padding: 6px;
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 50px;
       transition: all .5s; }
       .intro-section .intro-content #intro-btn:hover {
         background-color: #ecb0ff;
@@ -143,12 +143,16 @@ h1, h2, h3, h4, h5, h6 {
         transition: all .7s; }
 
 @media (min-width: 576px) {
-  .intro-section .intro-content {
-    padding-top: 50px; }
-    .intro-section .intro-content h1 {
-      font-size: 1.250rem; }
-    .intro-section .intro-content h2 {
-      font-size: 1rem; } }
+  .intro-section {
+    padding-top: 150px; }
+    .intro-section .intro-content {
+      padding-top: 50px; }
+      .intro-section .intro-content h1 {
+        font-size: 1.250rem; }
+      .intro-section .intro-content h2 {
+        font-size: 1rem; }
+      .intro-section .intro-content #intro-btn {
+        margin-top: 30px; } }
 @media (min-width: 768px) {
   .intro-section .intro-content h1 {
     font-size: 1.500rem;
@@ -165,7 +169,8 @@ h1, h2, h3, h4, h5, h6 {
   .intro-section .intro-content h2 {
     font-size: 1.500rem; }
   .intro-section .intro-content #intro-btn {
-    padding: 10px; } }
+    padding: 10px;
+    margin-top: 20px; } }
 @media (min-width: 1200px) {
   .intro-section .intro-content h1 {
     font-size: 2.000rem; }
@@ -358,11 +363,14 @@ h1, h2, h3, h4, h5, h6 {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 0.750em;
-        margin: 0 0 10px 0; }
+        margin: 0 0 30px 0; }
         .contact .form-wrapper .contact-form .form-submit:hover {
           background-color: #ecb0ff;
           border-color: #ecb0ff; }
 
+@media (min-width: 576px) {
+  .contact .form-wrapper .contact-form .form-submit {
+    margin-top: 30px; } }
 @media (min-width: 768px) {
   .contact .contact-intro h6 {
     font-size: 1.250em; }
