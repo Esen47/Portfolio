@@ -98,11 +98,11 @@ h1, h2, h3, h4, h5, h6 {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   color: #2f2f2f;
-  padding-top: 200px; }
+  padding-top: 170px; }
   .intro-section .intro-content {
     display: none; }
     .intro-section .intro-content h1 {
-      padding: 30px 0 60px 0;
+      padding: 30px 0 45px 0;
       font-size: 0.875rem; }
       .intro-section .intro-content h1 span {
         display: inline-block;
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       padding: 6px;
       display: inline-block;
-      margin-top: 50px;
+      margin-top: 35px;
       transition: all .5s; }
       .intro-section .intro-content #intro-btn:hover {
         background-color: #ecb0ff;
